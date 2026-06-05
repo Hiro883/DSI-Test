@@ -26,10 +26,11 @@ function App() {
         >
           {/* Desde esta parte es donde se autentifican los roles para que deje visualizar ciertas pantallas,
           las pantallas estan en el apartado de "path" */}
-          {/* Todos los roles autenticados */}
+
+          {/*Acceso a todos los roles autenticados */}
           <Route path="/dashboard" element={<HomeDashboard />} />
 
-          {/* ADMIN y ODONTOLOGO */}
+          {/* Acceso solo a ADMIN y ODONTOLOGO */}
           <Route
             path="/consulta"
             element={
@@ -55,7 +56,7 @@ function App() {
             }
           />
 
-          {/* ADMIN y RECEPCIONISTA */}
+          {/* Acceso solo a ADMIN y RECEPCIONISTA */}
           <Route
             path="/agenda"
             element={
@@ -65,7 +66,7 @@ function App() {
             }
           />
 
-          {/* Solo ADMIN */}
+          {/* Acceso solo a ADMIN */}
           <Route
             path="/usuarios"
             element={

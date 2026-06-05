@@ -3,7 +3,10 @@ import { useNavigate, Outlet, useLocation } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-/**  Esta Pantalla es el contenedor principal de toda la aplicacion, contiene el sidebar, header y el espacio para mostrar cada pantalla segun la ruta seleccionada en el sidebar. Es el componente que se renderiza en App.jsx dentro de la ruta "/dashboard/*" y a su vez inyecta las rutas hijas (Dashboard, Pacientes, Agenda, etc) dentro del <Outlet /> del main.
+/**  Esta Pantalla es el contenedor principal de toda la aplicacion, contiene el sidebar, 
+ * header y el espacio para mostrar cada pantalla segun la ruta seleccionada en el sidebar.
+ *  Es el componente que se renderiza en App.jsx dentro de la ruta "/dashboard/*" y a su vez
+ *  inyecta las rutas hijas (Dashboard, Pacientes, Agenda, etc) dentro del <Outlet /> del main.
 */
 const Layout = () => {
   const navigate = useNavigate();

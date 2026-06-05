@@ -4,7 +4,12 @@ import '../estilos/PatientManagement.css';
 
 const API_URL = 'http://localhost:8080/api';
 
-/** Esta Pantalla es el modulo de gestion de usuarios, donde el usuario puede ver un directorio de usuarios registrados, buscar por nombre o nombre de usuario, seleccionar un usuario para ver su perfil completo y editar sus datos personales o roles. El formulario se adapta según si se está creando un nuevo usuario o editando uno existente, mostrando los botones correspondientes (Registrar vs Guardar Cambios + Eliminar). Al eliminar un usuario se muestra una confirmación con SweetAlert2 para evitar eliminaciones accidentales */
+/** Esta Pantalla es el modulo de gestion de usuarios, donde el usuario puede ver un directorio de 
+ * usuarios registrados, buscar por nombre o nombre de usuario, seleccionar un usuario para ver su 
+ * perfil completo y editar sus datos personales o roles. El formulario se adapta según si se está 
+ * creando un nuevo usuario o editando uno existente, mostrando los botones correspondientes 
+ * (Registrar vs Guardar Cambios + Eliminar). Al eliminar un usuario se muestra una confirmación 
+ * con SweetAlert2 para evitar eliminaciones accidentales */
 
 const UserManagement = () => {
   const [isEditing, setIsEditing] = useState(false);

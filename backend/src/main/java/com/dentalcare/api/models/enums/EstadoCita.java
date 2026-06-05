@@ -2,7 +2,7 @@ package com.dentalcare.api.models.enums;
 
 public enum EstadoCita {
     PROGRAMADA, 
-    FINALIZADA, 
+    COMPLETADA, 
     CANCELADA, 
     PENDIENTE, 
     EN_PROGRESO,

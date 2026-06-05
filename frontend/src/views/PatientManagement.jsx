@@ -7,7 +7,12 @@ import '../estilos/PatientManagement.css';
 // URL base del backend
 const API_URL = 'http://localhost:8080/api';
 
-/**Esta Pantalla es el modulo de gestion de pacientes, donde el usuario puede ver un directorio de pacientes registrados, buscar por nombre o DUI, seleccionar un paciente para ver su expediente completo y editar sus datos personales o antecedentes medicos. El formulario se adapta segun si se esta creando un nuevo paciente o editando uno existente, mostrando los botones correspondientes (Registrar vs Guardar Cambios + Eliminar). Al eliminar un paciente se muestra una confirmacion con SweetAlert2 para evitar eliminaciones accidentales*/
+/**Esta Pantalla es el modulo de gestion de pacientes, donde el usuario puede ver un directorio de pacientes
+ *  registrados, buscar por nombre o DUI, seleccionar un paciente para ver su expediente completo y editar
+ *  sus datos personales o antecedentes medicos. El formulario se adapta segun si se esta creando
+ *  un nuevo paciente o editando uno existente, mostrando los botones correspondientes
+ *  (Registrar vs Guardar Cambios + Eliminar). Al eliminar un paciente se muestra una confirmacion con 
+ * SweetAlert2 para evitar eliminaciones accidentales*/
 
 const PatientManagement = () => {
   const navigate = useNavigate();
